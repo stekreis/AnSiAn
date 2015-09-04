@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="@string/pref_alarm_category"
+        android:title="@string/pref_alarm_category_title" >
+        <SwitchPreference
+            android:key="active"
+            android:summaryOff="@string/pref_alarm_active_summ_off"
+            android:summaryOn="@string/pref_alarm_active_summ_on"
+            android:title="@string/pref_alarm_active_title" />
+        <SwitchPreference
+            android:key="sound"
+            android:summaryOff="@string/pref_alarm_sound_summ_off"
+            android:summaryOn="@string/pref_alarm_sound_summ_on"
+            android:title="@string/pref_alarm_sound_title" />
+        <SwitchPreference
+            android:key="vibrate"
+            android:summaryOff="@string/pref_alarm_vibration_summ_off"
+            android:summaryOn="@string/pref_alarm_vibration_summ_on"
+            android:title="@string/pref_alarm_vibration_title" />
+
+        <de.tu.darmstadt.seemoo.ansian.model.preferences.FloatEditTextPreference
+            android:inputType="numberDecimal"
+            android:key="threshold"
+            android:summary="@string/pref_alarm_threshold_summ"
+            android:title="@string/pref_alarm_threshold_title" />
+
+        <de.tu.darmstadt.seemoo.ansian.model.preferences.IntEditTextPreference
+            android:defaultValue="1000"
+            android:dialogTitle="@string/pref_alarm_interval_title"
+            android:inputType="number"
+            android:key="alarm_interval"
+            android:summary="@string/pref_alarm_interval_summ"
+            android:title="@string/pref_alarm_interval_title" />
+    </PreferenceCategory>
+    <!-- <SwitchPreference -->
+    <!-- android:key="recording" -->
+    <!-- android:defaultValue="false" -->
+    <!-- android:summaryOff="@string/pref_alarm_recording_summ_off" -->
+    <!-- android:summaryOn="@string/pref_alarm_recording_summ_on" -->
+    <!-- android:title="@string/pref_alarm_recording_title" /> -->
+
+</PreferenceScreen>

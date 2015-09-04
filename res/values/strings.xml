@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <string name="morse_button_stop">Stop</string>
+    <string name="morse_button_send">Send</string>
+    <string name="morse_code_sending">Playing morse code: </string>
+	 <string name="app_name">AnSiAn</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_help">Help</string>
+    <string name="action_start">Start</string>
+    <string name="action_stop">Stop</string>
+    <string name="dit_duration_summary">Time for one dit is %s ms</string>
+    <string name="morse_frequency_summary">Frequency of morse is %s Hz</string>
+    <string name="initialization_time_summary">Initialization time is %s s</string>
+    <string name="action_demodulation_off">Demodulation: off</string>
+    <string name="action_demodulation_am">Demodulation: AM</string>
+    <string name="action_demodulation_nfm">Demodulation: narrow FM</string>
+    <string name="action_demodulation_wfm">Demodulation: wide FM</string>
+    <string name="action_demodulation_lsb">Demodulation: LSB</string>
+    <string name="action_demodulation_usb">Demodulation: USB</string>
+     <string name="action_demodulation_morse">Demodulation: Morse</string>
+    <string name="action_setFrequency">Set Frequency</string>
+    <string name="action_setGain">Set Gain</string>
+    <string name="action_recordOff">Record</string>
+    <string name="action_recordOn">Stop recording</string>
+    <string name="action_autoscale">Autoscale</string>
+    <string name="help_url">https://github.com/stekreis/AnSiAn/wiki/AnSiAn-manual</string>
+    <string name="hackrf_vga_gain_label">VGA Gain:</string>
+    <string name="hackrf_lna_gain_label">LNA Gain:</string>
+    <string name="rtlsdr_manual_gain_label">Manual gain:</string>
+    <string name="rtlsdr_agc_label">AGC:</string>
+    <string name="rtlsdr_gain_label">Gain:</string>
+    <string name="rtlsdr_ifgain_label">IF Gain:</string>
+    <string name="filesource_doesnt_support_gain">A file source doesn\'t support gain adjustment!</string>
+    <string name="rtl2832u_is_not_installed">RTL2832U driver is not installed</string>
+    <string name="warning_recording_is_running">Warning: Recording is running!</string>
+    <string name="tuneToFrequency_setFrequencyRange">Set bandwidth:</string>
+    <string name="recording_filename">File name:</string>
+    <string name="recording_frequency">Center frequency (Hz or MHz):</string>
+    <string name="recording_sampleRate">Sample rate:</string>
+    <string name="recording_fixedSampleRateHint">Sample rate is fixed because demodulation is running!</string>
+    <string name="recording_stopAfter">Stop after:</string>
+    <string name="save_state_running">save_state_running</string>
+    <string name="save_state_demodulatorMode">save_state_demodulatorMode</string>
+    <string name="save_state_channelFrequency">save_state_channelFrequency</string>
+    <string name="save_state_channelWidth">save_state_channelWidth</string>
+    <string name="save_state_squelch">save_state_squelch</string>
+    <string name="save_state_virtualFrequency">save_state_virtualFrequency</string>
+    <string name="save_state_virtualSampleRate">save_state_virtualSampleRate</string>
+    <string name="save_state_minDB">save_state_minDB</string>
+    <string name="save_state_maxDB">save_state_maxDB</string>    
+    <string name="action_swap">Swap Waterfall/Scanner</string>
+    <string name="action_stop_title">Stop</string>
+    <string name="action_pause">Pause</string>
+    <string name="text_to_send">Text to send:</string>
+    <string name="morse_text">Morse</string>
+    <string name="morse_code_label">Morse code:</string>
+    <string name="morse_text_label">Morse text:</string>
+    <string name="morse_state">"State: "</string>
+     <string name="morse_success_rate">"Symbol success rate: "</string>
+    <string name="morse_state_user_input">User input</string>
+    <string name="morse_state_playing_sound">Playing morse sound</string>
+    <string formatted="false" name="morse_wpm_label">%s WPM - %s ms per Dit</string>
+    <string name="morse_symbol_success_rate">"Symbol success rate: "</string>
+    <string name="morse_code_success_rate">"Code success rate: "</string>
+      <string name="morse_estimated_dit_duration_label">"Estimated dit duration: "</string>
+            <string name="morse_estimated_threshold_label">"Threshold: "</string>
+            <string name="morse_init_button">Init</string>
+      
+    
+</resources>

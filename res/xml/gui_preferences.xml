@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Misc" >
+        <ListPreference
+            android:defaultValue="@string/pref_fontSize_default"
+            android:dialogTitle="@string/pref_fontSize_title"
+            android:entries="@array/pref_fontSize_entries"
+            android:entryValues="@array/pref_fontSize_values"
+            android:key="font_size"
+            android:summary="@string/pref_fontSize_summ"
+            android:title="@string/pref_fontSize_title" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="hide_tabs"
+            android:summaryOff="@string/pref_hide_tabs_summ_off"
+            android:summaryOn="@string/pref_hide_tabs_summ_on"
+            android:title="@string/pref_hide_tabs_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Waterfall &amp; FFT" >
+        <ListPreference
+            android:defaultValue="@string/pref_colorMapType_default"
+            android:dialogTitle="@string/pref_colorMapType_title"
+            android:entries="@array/pref_colorMapType_entries"
+            android:entryValues="@array/pref_colorMapType_values"
+            android:key="colormap_type"
+            android:summary="@string/pref_colorMapType_summ"
+            android:title="@string/pref_colorMapType_title" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pause_waterfall"
+            android:summaryOff="@string/pref_pause_waterfall_summ_off"
+            android:summaryOn="@string/pref_pause_waterfall_summ_on"
+            android:title="@string/pref_pause_waterfall_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="scanner_waterfall"
+            android:summaryOff="@string/pref_scanner_waterfall_summ_off"
+            android:summaryOn="@string/pref_scanner_waterfall_summ_on"
+            android:title="@string/pref_scanner_waterfall_title" />
+
+        <ListPreference
+            android:defaultValue="@string/pref_spectrumWaterfallRatio_default"
+            android:dialogTitle="@string/pref_spectrumWaterfallRatio_title"
+            android:entries="@array/pref_spectrumWaterfallRatio_entries"
+            android:entryValues="@array/pref_spectrumWaterfallRatio_values"
+            android:key="fft_waterfall_ratio"
+            android:summary="@string/pref_spectrumWaterfallRatio_summ"
+            android:title="@string/pref_spectrumWaterfallRatio_title" />
+        <ListPreference
+            android:defaultValue="@string/pref_fftDrawingType_default"
+            android:dialogTitle="@string/pref_fftDrawingType_title"
+            android:entries="@array/pref_fft_drawing_type_entries"
+            android:entryValues="@array/pref_fft_drawing_type_values"
+            android:key="fft_drawing_type"
+            android:summary="@string/pref_fft_drawing_type_summ"
+            android:title="@string/pref_fftDrawingType_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

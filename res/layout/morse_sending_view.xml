@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/morseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/defaultHighMargin"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/morseCodeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    
+        android:text="@string/morse_code_label" />
+
+    <EditText
+        android:id="@+id/morseCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:isScrollContainer="true"
+     android:inputType="textMultiLine"/>
+
+    <TextView
+        android:id="@+id/morseTextLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/morse_text_label" />
+
+    <EditText
+        android:id="@+id/morseText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+         android:isScrollContainer="true"
+         android:inputType="textMultiLine" />
+
+</LinearLayout>

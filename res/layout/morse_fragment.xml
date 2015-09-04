@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/morseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/default_margin"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+          <de.tu.darmstadt.seemoo.ansian.gui.views.morse.MorseReceiveView
+              android:id="@+id/morseReceiveView"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="5.5" >
+
+        </de.tu.darmstadt.seemoo.ansian.gui.views.morse.MorseReceiveView>
+
+          <de.tu.darmstadt.seemoo.ansian.gui.views.morse.MorseStatusView
+              android:id="@+id/morseStatusView"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="4" >
+          </de.tu.darmstadt.seemoo.ansian.gui.views.morse.MorseStatusView>
+        
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+       <de.tu.darmstadt.seemoo.ansian.gui.views.morse.MorseSendingView
+           android:id="@+id/morseSendingView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" >
+            </de.tu.darmstadt.seemoo.ansian.gui.views.morse.MorseSendingView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <de.tu.darmstadt.seemoo.ansian.gui.views.morse.MorseButtonView
+        android:id="@+id/morseButtonView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5" >
+
+    </de.tu.darmstadt.seemoo.ansian.gui.views.morse.MorseButtonView>
+
+</LinearLayout>

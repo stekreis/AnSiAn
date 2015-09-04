@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_log"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:fillViewport="true">
+
+    <TextView
+        android:id="@+id/tv_log"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+</ScrollView>

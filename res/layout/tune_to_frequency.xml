@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/default_margin"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_tune_to_frequency_warning"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/warning_recording_is_running"
+        android:textColor="#ffff0000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:gravity="center" >
+
+        <NumberPicker
+            android:id="@+id/frequencyPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/frequencyUnitSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:entries="@array/frequency_units_no_hz"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tuneToFrequency_setFrequencyRange"
+            android:id="@+id/cb_tune_to_frequency_bandwidth"/>
+        <EditText
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
+            android:id="@+id/et_tune_to_frequency_bandwidth"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_tune_to_frequency_bandwidth_unit"
+            android:entries="@array/frequency_units"/>
+    </LinearLayout>
+
+</LinearLayout>

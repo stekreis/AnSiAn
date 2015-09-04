@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/default_margin"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recording_frequency" />
+
+            <EditText
+                android:id="@+id/et_recording_frequency"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recording_sampleRate" />
+
+            <Spinner
+                android:id="@+id/sp_recording_sampleRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_recording_fixedSampleRateHint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recording_fixedSampleRateHint"
+            android:textColor="#ffc0a000"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recording_filename" />
+
+        <EditText
+            android:id="@+id/et_recording_filename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/cb_recording_stopAfter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/recording_stopAfter" />
+
+            <EditText
+                android:id="@+id/et_recording_stopAfter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number" />
+
+            <Spinner
+                android:id="@+id/sp_recording_stopAfter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/recording_stopAfterUnit" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

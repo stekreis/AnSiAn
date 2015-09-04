@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <de.tu.darmstadt.seemoo.ansian.gui.tabs.SlidingTabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </de.tu.darmstadt.seemoo.ansian.gui.tabs.SlidingTabLayout>
+
+    <de.tu.darmstadt.seemoo.ansian.gui.views.morse.MorseReceiveView
+        android:id="@+id/ubiquitousMorseTicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </de.tu.darmstadt.seemoo.ansian.gui.views.morse.MorseReceiveView>
+  
+    <de.tu.darmstadt.seemoo.ansian.gui.tabs.MyViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+     </de.tu.darmstadt.seemoo.ansian.gui.tabs.MyViewPager>
+ 
+ <de.tu.darmstadt.seemoo.ansian.gui.views.MyToolbarView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize">
+     </de.tu.darmstadt.seemoo.ansian.gui.views.MyToolbarView>   
+
+</LinearLayout>

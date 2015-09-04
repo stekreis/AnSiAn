@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <de.tu.darmstadt.seemoo.ansian.model.preferences.IntEditTextPreference
+        android:inputType="number"
+        android:key="dit_duration"
+        android:maxLength="4"
+        android:summary="@string/dit_duration_summary"
+        android:title="Dit duration" />
+
+    <PreferenceCategory android:title="Sending" >
+        <de.tu.darmstadt.seemoo.ansian.model.preferences.IntEditTextPreference
+            android:inputType="number"
+            android:key="morse_frequency"
+            android:maxLength="5"
+            android:summary="@string/morse_frequency_summary"
+            android:title="Morse frequency" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="clear_text_after"
+            android:summaryOff="@string/pref_morse_clear_text_after_summ_off"
+            android:summaryOn="@string/pref_morse_clear_text_after_summ_on"
+            android:title="@string/pref_morse_clear_text_after_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Receiving" >
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="am_demod"
+            android:summaryOff="@string/pref_morse_am_demod_summ_off"
+            android:summaryOn="@string/pref_morse_am_demod_summ_on"
+            android:title="@string/pref_morse_am_demod_title" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/pref_morse_mode_title"
+            android:entries="@array/pref_morse_mode_entries"
+            android:entryValues="@array/pref_morse_mode_values"
+            android:key="receive_mode"
+            android:summary="@string/pref_morse_mode_summary"
+            android:title="@string/pref_morse_mode_title" />
+
+        <de.tu.darmstadt.seemoo.ansian.model.preferences.IntEditTextPreference
+            android:inputType="number"
+            android:key="init_time"
+            android:maxLength="2"
+            android:summary="@string/initialization_time_summary"
+            android:title="Initialization time" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="automatic_init"
+            android:summaryOff="@string/pref_morse_automatic_init_summ_off"
+            android:summaryOn="@string/pref_morse_automatic_init_summ_on"
+            android:title="@string/pref_morse_automatic_init_title" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="ubiquitous_ticker"
+            android:summaryOff="@string/pref_morse_ubiquitous_ticker_summ_off"
+            android:summaryOn="@string/pref_morse_ubiquitous_ticker_summ_on"
+            android:title="@string/pref_morse_ubiquitous_ticker_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

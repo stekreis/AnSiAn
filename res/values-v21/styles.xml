@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="MyActionBarTitleText"
+     parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+     <item name="android:textColor">#ffffffff</item>
+	</style>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <de.tu.darmstadt.seemoo.ansian.gui.tabs.SlidingTabLayout
+        android:id="@+id/settings_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </de.tu.darmstadt.seemoo.ansian.gui.tabs.SlidingTabLayout>
+  
+    <de.tu.darmstadt.seemoo.ansian.gui.tabs.MyViewPager
+        android:id="@+id/settings_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+     </de.tu.darmstadt.seemoo.ansian.gui.tabs.MyViewPager>   
+
+</LinearLayout>

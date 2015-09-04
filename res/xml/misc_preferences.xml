@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="autostart"
+        android:summaryOff="@string/pref_autostart_summ_off"
+        android:summaryOn="@string/pref_autostart_summ_on"
+        android:title="@string/pref_autostart_title" />
+
+    <PreferenceCategory android:title="@string/pref_category_source" >
+    </PreferenceCategory>
+
+    <ListPreference
+        android:dialogTitle="@string/pref_source_type_title"
+        android:entries="@array/pref_sourceType_entries"
+        android:entryValues="@array/pref_sourceType_values"
+        android:key="source_type"
+        android:summary="@string/pref_source_type_summ"
+        android:title="@string/pref_source_type_title" />
+
+    <PreferenceScreen
+        android:key="@string/pref_sourceSettings"
+        android:persistent="false"
+        android:title="@string/pref_sourceSettings_title" >
+        <PreferenceCategory
+            android:key="@string/pref_filesource_category"
+            android:title="@string/pref_filesource_category_title" >
+            <de.tu.darmstadt.seemoo.ansian.model.preferences.MyEditTextPreference
+                android:defaultValue="@string/pref_filesource_file_default"
+                android:key="filesource_file_name"
+                android:summary="@string/pref_filesource_file_summ"
+                android:title="@string/pref_filesource_file_title" />
+
+            <ListPreference
+                android:defaultValue="@string/pref_filesource_format_default"
+                android:dialogTitle="@string/pref_filesource_format_title"
+                android:entries="@array/pref_filesource_format_entries"
+                android:entryValues="@array/pref_filesource_format_values"
+                android:key="filesource_format"
+                android:summary="@string/pref_filesource_format_summ"
+                android:title="@string/pref_filesource_format_title" />
+
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="filesource_repeat"
+                android:summaryOff="@string/pref_filesource_repeat_summ_off"
+                android:summaryOn="@string/pref_filesource_repeat_summ_on"
+                android:title="@string/pref_filesource_repeat_title" />
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:key="@string/pref_hackrf_category"
+            android:title="@string/pref_hackrf_category_title" >
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="hackrf_amplify"
+                android:summaryOff="@string/pref_hackrf_amplifier_summ_off"
+                android:summaryOn="@string/pref_hackrf_amplifier_summ_on"
+                android:title="@string/pref_hackrf_amplifier_title" />
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="hackrf_antenna_power"
+                android:summaryOff="@string/pref_hackrf_antennaPower_summ_off"
+                android:summaryOn="@string/pref_hackrf_antennaPower_summ_on"
+                android:title="@string/pref_hackrf_antennaPower_title" />
+
+            <de.tu.darmstadt.seemoo.ansian.model.preferences.IntEditTextPreference
+                android:defaultValue="0"
+                android:dialogTitle="@string/pref_hackrf_frequencyShift_title"
+                android:inputType="number|numberSigned"
+                android:key="hackrf_frequency_shift"
+                android:title="@string/pref_hackrf_frequencyShift_title" />
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:key="@string/pref_rtlsdr_category"
+            android:title="@string/pref_rtlsdr_category_title" >
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="rtlsdr_external_server"
+                android:summaryOff="@string/pref_rtlsdr_externalServer_summ_off"
+                android:summaryOn="@string/pref_rtlsdr_externalServer_summ_on"
+                android:title="@string/pref_rtlsdr_externalServer_title" />
+
+            <EditTextPreference
+                android:defaultValue="@string/pref_rtlsdr_ip_default"
+                android:dependency="rtlsdr_external_server"
+                android:dialogTitle="@string/pref_rtlsdr_ip_title"
+                android:key="rtlsdr_ip"
+                android:title="@string/pref_rtlsdr_ip_title" />
+
+            <de.tu.darmstadt.seemoo.ansian.model.preferences.IntEditTextPreference
+                android:defaultValue="@string/pref_rtlsdr_port_default"
+                android:dependency="rtlsdr_external_server"
+                android:dialogTitle="@string/pref_rtlsdr_port_title"
+                android:inputType="number"
+                android:key="rtlsdr_port"
+                android:title="@string/pref_rtlsdr_port_title" />
+            <de.tu.darmstadt.seemoo.ansian.model.preferences.IntEditTextPreference
+                android:defaultValue="@string/pref_rtlsdr_frequencyCorrection_default"
+                android:dialogTitle="@string/pref_rtlsdr_frequencyCorrection_title"
+                android:inputType="number|numberSigned"
+                android:key="rtlsdr_frequency_correction"
+                android:title="@string/pref_rtlsdr_frequencyCorrection_title" />
+            <de.tu.darmstadt.seemoo.ansian.model.preferences.IntEditTextPreference
+                android:defaultValue="0"
+                android:dialogTitle="@string/pref_rtlsdr_frequencyShift_title"
+                android:inputType="number|numberSigned"
+                android:key="rtlsdr_frequency_shift"
+                android:title="@string/pref_rtlsdr_frequencyShift_title" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:disableDependentsState="true"
+        android:key="source_adaptive_samplerate"
+        android:summaryOff="@string/pref_source_adaptive_samplerate_summ_off"
+        android:summaryOn="@string/pref_source_adaptive_samplerate_summ_on"
+        android:title="@string/pref_source_adaptive_samplerate_title" />
+
+    <de.tu.darmstadt.seemoo.ansian.model.preferences.IntEditTextPreference
+        android:defaultValue="@string/pref_filesource_samplerate_default"
+        android:dependency="source_adaptive_samplerate"
+        android:dialogTitle="@string/pref_filesource_samplerate_title"
+        android:inputType="number"
+        android:key="source_samplerate"
+        android:summary="@string/pref_filesource_samplerate_summ"
+        android:title="@string/pref_filesource_samplerate_title" />
+
+    <PreferenceCategory>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="@string/pref_signalProcessing_category"
+        android:title="@string/pref_signalProcessing_category_title" >
+        <ListPreference
+            android:defaultValue="@string/pref_fftSize_default"
+            android:dialogTitle="@string/pref_fftSize_title"
+            android:entries="@array/pref_fftSize_entries"
+            android:entryValues="@array/pref_fftSize_values"
+             android:summary="@string/pref_fftSize_summ"
+            android:key="fft_size"
+            android:title="@string/pref_fftSize_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

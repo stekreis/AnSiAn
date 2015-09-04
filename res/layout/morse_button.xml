@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/default_margin"
+    android:orientation="horizontal" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/morseWPMLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/morse_wpm_label" />
+
+    <SeekBar
+        android:id="@+id/morseWPMSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:max="19" />
+</LinearLayout>
+
+<Button
+    android:id="@+id/morseButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:drawableStart="@android:drawable/ic_menu_send"
+    android:text="@string/morse_button_send" />
+
+</LinearLayout>
